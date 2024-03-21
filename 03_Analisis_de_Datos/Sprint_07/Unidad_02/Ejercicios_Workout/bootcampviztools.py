@@ -40,6 +40,48 @@ def pinta_distribucion_categoricas(df, columnas_categoricas, relativa=False, mos
     plt.show()
 
 
+def pinta_distribucion_categoricas_cgpt1(df, columnas_categoricas, relativa=False, mostrar_valores=False):
+    num_columnas = len(columnas_categoricas)
+    num_filas = (num_columnas // 2) + (num_columnas % 2)
+
+    fig, axes = plt.subplots(num_filas, 2, figsize=(15, 5 * num_filas))
+    axes = axes.flatten() 
+
+    for i, col in enumerate(columnas_categoricas):
+        ax = axes[i]
+        if col not in df.columns:
+            print(f"La columna {col} no está presente en el DataFrame.")
+            continue
+        
+        if relativa:
+            total = df[col].value_counts().sum()
+            serie = df[col].value_counts().apply(lambda x: x / total)
+        else:
+            serie = df[col].value_counts()
+        
+        sns.barplot(x=serie.index, y=serie, ax=ax, palette='viridis')
+        ax.set_title(f'Distribución de {col}')
+        ax.set_ylabel('Frecuencia' if not relativa else 'Frecuencia Relativa')
+        ax.set_xlabel('')
+        ax.tick_params(axis='x', rotation=45)  # Rotar etiquetas del eje x
+
+        if mostrar_valores:
+            for p in ax.patches:
+                height = p.get_height()
+                ax.annotate(f'{height:.2f}', (p.get_x() + p.get_width() / 2., height), 
+                            ha='center', va='center', xytext=(0, 9), textcoords='offset points')
+
+        # Ajustar el diseño del gráfico para evitar que los nombres de las categorías se superpongan
+        plt.setp(ax.get_xticklabels(), rotation=45, ha="right", rotation_mode="anchor")
+        plt.tight_layout()
+
+    for j in range(i + 1, num_filas * 2):
+        axes[j].axis('off')
+
+    plt.tight_layout()
+    plt.show()
+
+
 def plot_categorical_relationship_fin(df, cat_col1, cat_col2, relative_freq=False, show_values=False, size_group = 5):
     # Prepara los datos
     count_data = df.groupby([cat_col1, cat_col2]).size().reset_index(name='count')
@@ -184,6 +226,29 @@ def plot_combined_graphs(df, columns, whisker_width=1.5, bins = None):
                     axes[i,1].set_title(f'Boxplot de {column}')
                 else:
                     axes[1].set_title(f'Boxplot de {column}')
+
+        plt.tight_layout()
+        plt.show()
+        
+def plot_combined_graphs_cgpt(df, columns, whisker_width=1.5, bins=None):
+    num_cols = len(columns)
+    if num_cols:
+        fig, axes = plt.subplots(num_cols, 2, figsize=(12, 5 * num_cols))
+        
+        for i, column in enumerate(columns):
+            if df[column].dtype in ['int64', 'float64']:
+                # Histograma y KDE
+                sns.histplot(df[column], kde=True, ax=axes[i,0] if num_cols > 1 else axes[0], bins="auto" if not bins else bins)
+                title_hist = f'Histograma y KDE de {column}'
+                axes[i,0].set_title(title_hist) if num_cols > 1 else axes[0].set_title(title_hist)
+
+                # Boxplot
+                sns.boxplot(x=df[column], ax=axes[i,1] if num_cols > 1 else axes[1], whis=whisker_width)
+                title_boxplot = f'Boxplot de {column}'
+                axes[i,1].set_title(title_boxplot) if num_cols > 1 else axes[1].set_title(title_boxplot)
+
+                # Ajustar diseño
+                plt.setp(axes[i,:], xlabel='')  # Eliminar etiqueta x de los subgráficos
 
         plt.tight_layout()
         plt.show()
