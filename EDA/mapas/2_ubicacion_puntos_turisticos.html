@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1a7431e4c16ffc29d43bb52112f8ac9a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1a7431e4c16ffc29d43bb52112f8ac9a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1a7431e4c16ffc29d43bb52112f8ac9a = L.map(
+                "map_1a7431e4c16ffc29d43bb52112f8ac9a",
+                {
+                    center: [40.4167278, -3.7033387],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7c24638f8db62164baa7e500c9c7c398 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1a7431e4c16ffc29d43bb52112f8ac9a);
+        
+    
+            var circle_marker_c58d4a8ebd8233a71b2a957f024059d5 = L.circleMarker(
+                [40.41378, -3.69212],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1a7431e4c16ffc29d43bb52112f8ac9a);
+        
+    
+        var popup_1e03ce563e3ef12ac481badf1ed72990 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f6647fe648f01a446ae2154f4fdb1b0 = $(`<div id="html_7f6647fe648f01a446ae2154f4fdb1b0" style="width: 100.0%; height: 100.0%;">Museo Nacional del Prado</div>`)[0];
+                popup_1e03ce563e3ef12ac481badf1ed72990.setContent(html_7f6647fe648f01a446ae2154f4fdb1b0);
+            
+        
+
+        circle_marker_c58d4a8ebd8233a71b2a957f024059d5.bindPopup(popup_1e03ce563e3ef12ac481badf1ed72990)
+        ;
+
+        
+    
+    
+            circle_marker_c58d4a8ebd8233a71b2a957f024059d5.bindTooltip(
+                `<div>
+                     Click para nombre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2b0671d02d75287a7074f086f5396509 = L.circleMarker(
+                [40.41795, -3.71431],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1a7431e4c16ffc29d43bb52112f8ac9a);
+        
+    
+        var popup_462050b7c13d24d95ab359457c1ecf61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03e708a9f29fe938b67e654eff8aa7ca = $(`<div id="html_03e708a9f29fe938b67e654eff8aa7ca" style="width: 100.0%; height: 100.0%;">Palacio Real</div>`)[0];
+                popup_462050b7c13d24d95ab359457c1ecf61.setContent(html_03e708a9f29fe938b67e654eff8aa7ca);
+            
+        
+
+        circle_marker_2b0671d02d75287a7074f086f5396509.bindPopup(popup_462050b7c13d24d95ab359457c1ecf61)
+        ;
+
+        
+    
+    
+            circle_marker_2b0671d02d75287a7074f086f5396509.bindTooltip(
+                `<div>
+                     Click para nombre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c6817f1733ca04fc2e63076e94546aeb = L.circleMarker(
+                [40.41538, -3.70743],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1a7431e4c16ffc29d43bb52112f8ac9a);
+        
+    
+        var popup_70aad01dc310a18d1d453d4ada361263 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_038b75e48533bde3b5d8ff8ab8df8eec = $(`<div id="html_038b75e48533bde3b5d8ff8ab8df8eec" style="width: 100.0%; height: 100.0%;">Plaza Mayor</div>`)[0];
+                popup_70aad01dc310a18d1d453d4ada361263.setContent(html_038b75e48533bde3b5d8ff8ab8df8eec);
+            
+        
+
+        circle_marker_c6817f1733ca04fc2e63076e94546aeb.bindPopup(popup_70aad01dc310a18d1d453d4ada361263)
+        ;
+
+        
+    
+    
+            circle_marker_c6817f1733ca04fc2e63076e94546aeb.bindTooltip(
+                `<div>
+                     Click para nombre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_febfafae6263c1e346ab88dc2eac10d7 = L.circleMarker(
+                [40.42404, -3.71778],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1a7431e4c16ffc29d43bb52112f8ac9a);
+        
+    
+        var popup_206e485452525b37609eb70ef30aedb0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4476dd612e469998f474cfd5542141ae = $(`<div id="html_4476dd612e469998f474cfd5542141ae" style="width: 100.0%; height: 100.0%;">Templo de Debod</div>`)[0];
+                popup_206e485452525b37609eb70ef30aedb0.setContent(html_4476dd612e469998f474cfd5542141ae);
+            
+        
+
+        circle_marker_febfafae6263c1e346ab88dc2eac10d7.bindPopup(popup_206e485452525b37609eb70ef30aedb0)
+        ;
+
+        
+    
+    
+            circle_marker_febfafae6263c1e346ab88dc2eac10d7.bindTooltip(
+                `<div>
+                     Click para nombre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_00f439b614c49215395e2e48bcfb11d4 = L.circleMarker(
+                [40.41567, -3.71432],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1a7431e4c16ffc29d43bb52112f8ac9a);
+        
+    
+        var popup_b27b906d8f9a186b313c8aabf56e7bfd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9165d7482632a6f3d754011cc0d7f7fc = $(`<div id="html_9165d7482632a6f3d754011cc0d7f7fc" style="width: 100.0%; height: 100.0%;">Catedral Almudena</div>`)[0];
+                popup_b27b906d8f9a186b313c8aabf56e7bfd.setContent(html_9165d7482632a6f3d754011cc0d7f7fc);
+            
+        
+
+        circle_marker_00f439b614c49215395e2e48bcfb11d4.bindPopup(popup_b27b906d8f9a186b313c8aabf56e7bfd)
+        ;
+
+        
+    
+    
+            circle_marker_00f439b614c49215395e2e48bcfb11d4.bindTooltip(
+                `<div>
+                     Click para nombre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c601294ea5a1771009cfd23a795ee879 = L.circleMarker(
+                [40.45306, -3.68835],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1a7431e4c16ffc29d43bb52112f8ac9a);
+        
+    
+        var popup_942ce8378500f35056fa895f903e2188 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4fa32f9ec093be3a1b4cdcc444dd1f70 = $(`<div id="html_4fa32f9ec093be3a1b4cdcc444dd1f70" style="width: 100.0%; height: 100.0%;">Santiago Bernabeu</div>`)[0];
+                popup_942ce8378500f35056fa895f903e2188.setContent(html_4fa32f9ec093be3a1b4cdcc444dd1f70);
+            
+        
+
+        circle_marker_c601294ea5a1771009cfd23a795ee879.bindPopup(popup_942ce8378500f35056fa895f903e2188)
+        ;
+
+        
+    
+    
+            circle_marker_c601294ea5a1771009cfd23a795ee879.bindTooltip(
+                `<div>
+                     Click para nombre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_51f3bde497db016f17f0f5ccbf4c766a = L.circleMarker(
+                [40.41524, -3.70925],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1a7431e4c16ffc29d43bb52112f8ac9a);
+        
+    
+        var popup_a7305c73e343cb35a2e3fc5937573c73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef067fda679755c3071e0871eb76c38e = $(`<div id="html_ef067fda679755c3071e0871eb76c38e" style="width: 100.0%; height: 100.0%;">Mercado de San Miguel</div>`)[0];
+                popup_a7305c73e343cb35a2e3fc5937573c73.setContent(html_ef067fda679755c3071e0871eb76c38e);
+            
+        
+
+        circle_marker_51f3bde497db016f17f0f5ccbf4c766a.bindPopup(popup_a7305c73e343cb35a2e3fc5937573c73)
+        ;
+
+        
+    
+    
+            circle_marker_51f3bde497db016f17f0f5ccbf4c766a.bindTooltip(
+                `<div>
+                     Click para nombre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7cd4dd93d2758b97e833de3203001504 = L.circleMarker(
+                [40.42029, -3.68891],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1a7431e4c16ffc29d43bb52112f8ac9a);
+        
+    
+        var popup_8f5049ceec89e6e9c5894c54b664fad6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8017be16ab0a9e56bb7ab1163fee5113 = $(`<div id="html_8017be16ab0a9e56bb7ab1163fee5113" style="width: 100.0%; height: 100.0%;">Puerta de Alcalá</div>`)[0];
+                popup_8f5049ceec89e6e9c5894c54b664fad6.setContent(html_8017be16ab0a9e56bb7ab1163fee5113);
+            
+        
+
+        circle_marker_7cd4dd93d2758b97e833de3203001504.bindPopup(popup_8f5049ceec89e6e9c5894c54b664fad6)
+        ;
+
+        
+    
+    
+            circle_marker_7cd4dd93d2758b97e833de3203001504.bindTooltip(
+                `<div>
+                     Click para nombre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d216d338268c141fb7fac3548c053820 = L.circleMarker(
+                [40.41674, -3.70379],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1a7431e4c16ffc29d43bb52112f8ac9a);
+        
+    
+        var popup_c502e3bfd2b69ef7a8a78cdc5208180c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fad52fd6b6a35bdeb47896df9b90ddf4 = $(`<div id="html_fad52fd6b6a35bdeb47896df9b90ddf4" style="width: 100.0%; height: 100.0%;">Puerta del Sol</div>`)[0];
+                popup_c502e3bfd2b69ef7a8a78cdc5208180c.setContent(html_fad52fd6b6a35bdeb47896df9b90ddf4);
+            
+        
+
+        circle_marker_d216d338268c141fb7fac3548c053820.bindPopup(popup_c502e3bfd2b69ef7a8a78cdc5208180c)
+        ;
+
+        
+    
+    
+            circle_marker_d216d338268c141fb7fac3548c053820.bindTooltip(
+                `<div>
+                     Click para nombre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4f800c3481a1c2ac9a575b07f18a4003 = L.circleMarker(
+                [40.41889, -3.69219],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1a7431e4c16ffc29d43bb52112f8ac9a);
+        
+    
+        var popup_f30afc0d613e9b1416eb22ecdb083272 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ebd07f63e55a497f1fe077d97803a5a = $(`<div id="html_7ebd07f63e55a497f1fe077d97803a5a" style="width: 100.0%; height: 100.0%;">Palacio Cibeles</div>`)[0];
+                popup_f30afc0d613e9b1416eb22ecdb083272.setContent(html_7ebd07f63e55a497f1fe077d97803a5a);
+            
+        
+
+        circle_marker_4f800c3481a1c2ac9a575b07f18a4003.bindPopup(popup_f30afc0d613e9b1416eb22ecdb083272)
+        ;
+
+        
+    
+    
+            circle_marker_4f800c3481a1c2ac9a575b07f18a4003.bindTooltip(
+                `<div>
+                     Click para nombre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_968b64bea6d671ce20315c9d56e92e71 = L.circleMarker(
+                [40.43614, -3.59946],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "black", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_1a7431e4c16ffc29d43bb52112f8ac9a);
+        
+    
+        var popup_44c3abc5483d7270cb54e0bbdf1ac8a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_124d7d49cd65823e457c1a221246c891 = $(`<div id="html_124d7d49cd65823e457c1a221246c891" style="width: 100.0%; height: 100.0%;">Metropolitano (Estadio)</div>`)[0];
+                popup_44c3abc5483d7270cb54e0bbdf1ac8a2.setContent(html_124d7d49cd65823e457c1a221246c891);
+            
+        
+
+        circle_marker_968b64bea6d671ce20315c9d56e92e71.bindPopup(popup_44c3abc5483d7270cb54e0bbdf1ac8a2)
+        ;
+
+        
+    
+    
+            circle_marker_968b64bea6d671ce20315c9d56e92e71.bindTooltip(
+                `<div>
+                     Click para nombre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_33c7eb8956d66cf36d591ca276885ce9 = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_7c24638f8db62164baa7e500c9c7c398,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_33c7eb8956d66cf36d591ca276885ce9.base_layers,
+                layer_control_33c7eb8956d66cf36d591ca276885ce9.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_1a7431e4c16ffc29d43bb52112f8ac9a);
+        
+</script>
+</html>

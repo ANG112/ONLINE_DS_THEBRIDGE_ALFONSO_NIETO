@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_12eae08f7da173a90f59161e909ee449 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_12eae08f7da173a90f59161e909ee449" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_12eae08f7da173a90f59161e909ee449 = L.map(
+                "map_12eae08f7da173a90f59161e909ee449",
+                {
+                    center: [40.4167278, -3.7033387],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b14095a0fc0f70bb43515ef3dceb6d90 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_12eae08f7da173a90f59161e909ee449);
+        
+    
+            var circle_marker_49fd522fcb4a2ee947cd504e31c821c4 = L.circleMarker(
+                [40.42049, -3.70726],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_12eae08f7da173a90f59161e909ee449);
+        
+    
+        var popup_1212cab5b3dae58e640ea6da1ce29fd9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_508b15c00577006732096dac54ff7225 = $(`<div id="html_508b15c00577006732096dac54ff7225" style="width: 100.0%; height: 100.0%;">Gran Vía</div>`)[0];
+                popup_1212cab5b3dae58e640ea6da1ce29fd9.setContent(html_508b15c00577006732096dac54ff7225);
+            
+        
+
+        circle_marker_49fd522fcb4a2ee947cd504e31c821c4.bindPopup(popup_1212cab5b3dae58e640ea6da1ce29fd9)
+        ;
+
+        
+    
+    
+            circle_marker_49fd522fcb4a2ee947cd504e31c821c4.bindTooltip(
+                `<div>
+                     Click para nombre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dea87c29b97f1be8b684d961982035b7 = L.circleMarker(
+                [40.46667, -3.6894],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_12eae08f7da173a90f59161e909ee449);
+        
+    
+        var popup_ac0fda9a5fcf66b0c8e356aa9806ca9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_933a19caa2851280881d9753214592bd = $(`<div id="html_933a19caa2851280881d9753214592bd" style="width: 100.0%; height: 100.0%;">Paseo de la Castellana</div>`)[0];
+                popup_ac0fda9a5fcf66b0c8e356aa9806ca9f.setContent(html_933a19caa2851280881d9753214592bd);
+            
+        
+
+        circle_marker_dea87c29b97f1be8b684d961982035b7.bindPopup(popup_ac0fda9a5fcf66b0c8e356aa9806ca9f)
+        ;
+
+        
+    
+    
+            circle_marker_dea87c29b97f1be8b684d961982035b7.bindTooltip(
+                `<div>
+                     Click para nombre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_78c3c2e48af282d6f9e655e2edbf0a57 = L.circleMarker(
+                [40.41621, -3.6935],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_12eae08f7da173a90f59161e909ee449);
+        
+    
+        var popup_f6311c0dc9e23a649ff653fab66114a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cbeb2d0fc9af7de6385c4cda3d33efc = $(`<div id="html_4cbeb2d0fc9af7de6385c4cda3d33efc" style="width: 100.0%; height: 100.0%;">Paseo del Prado</div>`)[0];
+                popup_f6311c0dc9e23a649ff653fab66114a2.setContent(html_4cbeb2d0fc9af7de6385c4cda3d33efc);
+            
+        
+
+        circle_marker_78c3c2e48af282d6f9e655e2edbf0a57.bindPopup(popup_f6311c0dc9e23a649ff653fab66114a2)
+        ;
+
+        
+    
+    
+            circle_marker_78c3c2e48af282d6f9e655e2edbf0a57.bindTooltip(
+                `<div>
+                     Click para nombre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_76cdf90c0909324e2202a7bccc5177ab = L.circleMarker(
+                [40.41359, -3.69818],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_12eae08f7da173a90f59161e909ee449);
+        
+    
+        var popup_dc7d5ae5fedfa71618816cd5ef97950c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3af6467a0af7680a7bb8290585ee3bf9 = $(`<div id="html_3af6467a0af7680a7bb8290585ee3bf9" style="width: 100.0%; height: 100.0%;">Calle de las Huertas</div>`)[0];
+                popup_dc7d5ae5fedfa71618816cd5ef97950c.setContent(html_3af6467a0af7680a7bb8290585ee3bf9);
+            
+        
+
+        circle_marker_76cdf90c0909324e2202a7bccc5177ab.bindPopup(popup_dc7d5ae5fedfa71618816cd5ef97950c)
+        ;
+
+        
+    
+    
+            circle_marker_76cdf90c0909324e2202a7bccc5177ab.bindTooltip(
+                `<div>
+                     Click para nombre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_250e009782c408ea30674064c27a767f = L.circleMarker(
+                [40.41529, -3.70759],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_12eae08f7da173a90f59161e909ee449);
+        
+    
+        var popup_a8a67da7abd2d0cb26193f5eb09f94fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae58dfcc6e558a9d6625c7caa0a6321f = $(`<div id="html_ae58dfcc6e558a9d6625c7caa0a6321f" style="width: 100.0%; height: 100.0%;">Calle Mayor</div>`)[0];
+                popup_a8a67da7abd2d0cb26193f5eb09f94fb.setContent(html_ae58dfcc6e558a9d6625c7caa0a6321f);
+            
+        
+
+        circle_marker_250e009782c408ea30674064c27a767f.bindPopup(popup_a8a67da7abd2d0cb26193f5eb09f94fb)
+        ;
+
+        
+    
+    
+            circle_marker_250e009782c408ea30674064c27a767f.bindTooltip(
+                `<div>
+                     Click para nombre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d920fa02b365ae5df922a2b241659cc3 = L.circleMarker(
+                [40.41939, -3.7073],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_12eae08f7da173a90f59161e909ee449);
+        
+    
+        var popup_49f7c293963000bef50caa7420168adf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f78187a1f19c1c2b7b03771112dc2d1e = $(`<div id="html_f78187a1f19c1c2b7b03771112dc2d1e" style="width: 100.0%; height: 100.0%;">Calle Preciados</div>`)[0];
+                popup_49f7c293963000bef50caa7420168adf.setContent(html_f78187a1f19c1c2b7b03771112dc2d1e);
+            
+        
+
+        circle_marker_d920fa02b365ae5df922a2b241659cc3.bindPopup(popup_49f7c293963000bef50caa7420168adf)
+        ;
+
+        
+    
+    
+            circle_marker_d920fa02b365ae5df922a2b241659cc3.bindTooltip(
+                `<div>
+                     Click para nombre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_517923c84e9932c1a416c3cc46edf3ee = L.circleMarker(
+                [40.41243, -3.70887],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_12eae08f7da173a90f59161e909ee449);
+        
+    
+        var popup_456700db4b4e60f48c35d4e31c3a6b93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59764c70078893152f4c7051dc5eec62 = $(`<div id="html_59764c70078893152f4c7051dc5eec62" style="width: 100.0%; height: 100.0%;">Calle Cava Baja</div>`)[0];
+                popup_456700db4b4e60f48c35d4e31c3a6b93.setContent(html_59764c70078893152f4c7051dc5eec62);
+            
+        
+
+        circle_marker_517923c84e9932c1a416c3cc46edf3ee.bindPopup(popup_456700db4b4e60f48c35d4e31c3a6b93)
+        ;
+
+        
+    
+    
+            circle_marker_517923c84e9932c1a416c3cc46edf3ee.bindTooltip(
+                `<div>
+                     Click para nombre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d37d7889c2a8371af94fe4f7b3566de3 = L.circleMarker(
+                [40.41234, -3.71479],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_12eae08f7da173a90f59161e909ee449);
+        
+    
+        var popup_275375dfffcc70055f96cfffd9214cf4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f9ceda331c8bf36306305a162266457 = $(`<div id="html_6f9ceda331c8bf36306305a162266457" style="width: 100.0%; height: 100.0%;">Calle de Segovia</div>`)[0];
+                popup_275375dfffcc70055f96cfffd9214cf4.setContent(html_6f9ceda331c8bf36306305a162266457);
+            
+        
+
+        circle_marker_d37d7889c2a8371af94fe4f7b3566de3.bindPopup(popup_275375dfffcc70055f96cfffd9214cf4)
+        ;
+
+        
+    
+    
+            circle_marker_d37d7889c2a8371af94fe4f7b3566de3.bindTooltip(
+                `<div>
+                     Click para nombre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_39249d1287b16013af351d2a92737eb6 = L.circleMarker(
+                [40.42649, -3.70675],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(map_12eae08f7da173a90f59161e909ee449);
+        
+    
+        var popup_61fa65f1355c2de9d108fdf6defaf37a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8364f3496ff6ddb0e5934cc903ee995c = $(`<div id="html_8364f3496ff6ddb0e5934cc903ee995c" style="width: 100.0%; height: 100.0%;">Calle del Espíritu Santo</div>`)[0];
+                popup_61fa65f1355c2de9d108fdf6defaf37a.setContent(html_8364f3496ff6ddb0e5934cc903ee995c);
+            
+        
+
+        circle_marker_39249d1287b16013af351d2a92737eb6.bindPopup(popup_61fa65f1355c2de9d108fdf6defaf37a)
+        ;
+
+        
+    
+    
+            circle_marker_39249d1287b16013af351d2a92737eb6.bindTooltip(
+                `<div>
+                     Click para nombre
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_01ee3b0affaea447a944affc215bbd7a = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_b14095a0fc0f70bb43515ef3dceb6d90,
+                },
+                overlays :  {
+                },
+            };
+            L.control.layers(
+                layer_control_01ee3b0affaea447a944affc215bbd7a.base_layers,
+                layer_control_01ee3b0affaea447a944affc215bbd7a.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_12eae08f7da173a90f59161e909ee449);
+        
+</script>
+</html>
