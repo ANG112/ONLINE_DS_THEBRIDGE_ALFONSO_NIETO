@@ -7,7 +7,7 @@ import seaborn as sns
 #from scipy.stats import pearsonr, mannwhitneyu
 from scipy import stats # Importo toda la librería para las diferentes pruebas de correlación/hipótesis
 
-from EDA_funcion_tools import *
+
 
 
 
@@ -125,10 +125,19 @@ def plot_histo_den(df, columns):
     fig, axes = plt.subplots(num_rows, 2, figsize=(12, 6 * num_rows))
     axes = axes.flatten()
 
+    # Guardar el valor original de use_inf_as_na
+    original_use_inf_as_na = pd.get_option('mode.use_inf_as_na')
+
+    # Desactivar use_inf_as_na para evitar la advertencia
+    pd.set_option('mode.use_inf_as_na', False)
+
     for i, column in enumerate(columns):
         if df[column].dtype in ['int64', 'float64']:
             sns.histplot(df[column], kde=True, ax=axes[i])
             axes[i].set_title(f'Histograma y KDE de {column}')
+    
+    # Restaurar el valor original de use_inf_as_na
+    pd.set_option('mode.use_inf_as_na', original_use_inf_as_na)
   
     # Ocultar ejes vacíos
     for j in range(i + 1, num_rows * 2):
