@@ -1,0 +1,67 @@
+# Variables
+
+| Variable                | Traducción                      |Outliers|Heavy tail|Selección|
+|-------------------------|---------------------------------|--------|------| ------|
+| diagnosis               | diagnóstico                     |Target| Target|target|
+| radius_mean             | radio_promedio                  |Si|No|Si
+| texture_mean            | textura_promedio                |Si|No|
+| perimeter_mean          | perímetro_promedio              |No|No|Si
+| area_mean               | área_promedio                   |Si|Si|
+| smoothness_mean         | suavidad_promedio               |Si|No|
+| compactness_mean        | compacidad_promedio             |No| No|
+| concavity_mean          | concavidad_promedio             |No|No|Si
+| concave points_mean     | puntos_cóncavos_promedio        |No|Puede|Si
+| symmetry_mean           | simetría_promedio               |Si|No|
+| fractal_dimension_mean  | dimensión_fractal_promedio      |Si|No|
+| radius_se               | radio_error_estándar            |Si|Si|Si
+| texture_se              | textura_error_estándar          |Si|Si|
+| perimeter_se            | perímetro_error_estándar        |Si|Si|Si
+| area_se                 | área_error_estándar             |Si| Si|
+| smoothness_se           | suavidad_error_estándar         |Si| Si|
+| compactness_se          | compacidad_error_estándar       |Si| Puede|Si
+| concavity_se            | concavidad_error_estándar       |Si|Si|
+| concave points_se       | puntos_cóncavos_error_estándar  |Si| Puede|
+| symmetry_se             | simetría_error_estándar         |Si|Pude|
+| fractal_dimension_se    | dimensión_fractal_error_estándar|Si|Si|
+| radius_worst            | radio_peor                      |Si|No|Si
+| texture_worst           | textura_peor                    |No|No|Si
+| perimeter_worst         | perímetro_peor                  |Si|No|Si
+| area_worst              | área_peor                       |Si|Si|Si
+| smoothness_worst        | suavidad_peor                   |No|No|
+
+
+## Selección de varaibles
+
+Variables con la mayor correlación con la variable target y que evitan la multicolinealidad
+
+| Varaible| Correlación|Selección|
+|-------|-----|---|
+diagnosis_bin|             1.00| Si
+concave points_mean|       0.78|Si
+perimeter_worst    |       0.77|Si
+radius_worst       |       0.77|Si
+perimeter_mean     |       0.73|Si
+area_worst         |       0.72| Si
+radius_mean        |       0.72|Si
+area_mean          |       0.70
+concavity_mean     |       0.68|Si
+compactness_mean   |       0.59
+radius_se          |       0.54|Si
+perimeter_se       |       0.53|Si
+area_se            |       0.52
+texture_worst      |       0.47|Si
+smoothness_worst   |       0.43|Si
+texture_mean       |       0.42
+concave points_se  |       0.38
+smoothness_mean    |       0.38
+symmetry_mean      |       0.35
+compactness_se     |       0.25|Si
+concavity_se       |       0.22
+smoothness_se       |      0.06
+fractal_dimension_se|      0.04
+fractal_dimension_mean|    0.01
+symmetry_se           |    0.00
+texture_se            |    0.00
+
+
+
